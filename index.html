@@ -229,6 +229,14 @@
     transition: transform .5s ease, background .3s ease;
   }
   .drink:hover .emoji { transform: rotate(-12deg) scale(1.12); background: var(--sand); }
+  .drink .drink-img {
+    display: block;
+    width: calc(100% + 56px);
+    height: 160px;
+    object-fit: cover;
+    margin: -32px -28px 18px;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
   .drink h3 { font-size: 1.35rem; margin-bottom: 8px; }
   .drink p { color: #7a6250; font-size: .95rem; margin-bottom: 18px; min-height: 3.2em; }
   .drink .foot { display: flex; align-items: center; justify-content: space-between; }
@@ -492,7 +500,7 @@
       </div>
       <div class="menu-grid">
         <article class="drink reveal">
-          <div class="emoji">🐱</div>
+          <img src="img/latte.jpg" alt="Латте «Котик»" width="3000" height="3996" loading="lazy" class="drink-img">
           <h3>Латте «Котик»</h3>
           <p>Нежный латте с карамельным сиропом и пенкой с рисунком мордочки.</p>
           <div class="foot"><span class="price">290 ₽</span><span class="tag hit">Хит</span></div>
@@ -522,7 +530,7 @@
           <div class="foot"><span class="price">340 ₽</span><span class="tag">Холодный</span></div>
         </article>
         <article class="drink reveal d2">
-          <div class="emoji">🍵</div>
+          <img src="img/matcha.jpg" alt="Матча-латте" width="4898" height="3265" loading="lazy" class="drink-img">
           <h3>Матча-латте</h3>
           <p>Японский чай матча, овсяное молоко и капля кленового сиропа.</p>
           <div class="foot"><span class="price">330 ₽</span><span class="tag">Без кофеина</span></div>
@@ -629,7 +637,7 @@
         <div class="info-card reveal">
           <div class="info-row">
             <div class="ico">📍</div>
-            <div><h3>Адрес</h3><p>ул. Уютная, 12 (вход со двора, рядом со сквером)</p></div>
+            <div><h3>Адрес</h3><p>Санкт-Петербург, ул. Уютная, 12 (вход со двора, рядом со сквером)</p></div>
           </div>
           <div class="info-row">
             <div class="ico">🕗</div>
@@ -644,11 +652,11 @@
           </div>
           <div class="info-row">
             <div class="ico">📞</div>
-            <div><h3>Телефон</h3><a href="tel:+70000000000">+7 (000) 000-00-00</a></div>
+            <div><h3>Телефон</h3><a href="tel:+78125550123">+7 (812) 555-01-23</a></div>
           </div>
           <div class="info-row">
             <div class="ico">✉️</div>
-            <div><h3>Почта и соцсети</h3><a href="mailto:hello@coffeekot.example">hello@coffeekot.example</a><p>@coffeekot_cafe</p></div>
+            <div><h3>Почта и соцсети</h3><a href="mailto:hello@coffeekot.ru">hello@coffeekot.ru</a><p>@coffeekot_cafe</p></div>
           </div>
         </div>
         <div class="map-card reveal d1">
